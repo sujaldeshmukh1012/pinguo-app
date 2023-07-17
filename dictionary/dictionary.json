@@ -1,0 +1,4094 @@
+[
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": 1,
+      "subtitle": "One",
+      "ideogram": "一",
+      "pronunciation": "yī",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": 7,
+      "subtitle": "Seven",
+      "ideogram": "七",
+      "pronunciation": "qī",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": 3,
+      "subtitle": "Three",
+      "ideogram": "三",
+      "pronunciation": "sān",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Up",
+      "subtitle": "",
+      "ideogram": "上",
+      "pronunciation": "shàng",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Morning",
+      "subtitle": "",
+      "ideogram": "上午",
+      "pronunciation": "shàng wǔ",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Down",
+      "subtitle": "",
+      "ideogram": "下",
+      "pronunciation": "xià",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Afternoon",
+      "subtitle": "",
+      "ideogram": "下午",
+      "pronunciation": "xià wǔ",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Rain",
+      "subtitle": "",
+      "ideogram": "下雨",
+      "pronunciation": "xià yǔ",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "No",
+      "subtitle": "",
+      "ideogram": "不",
+      "pronunciation": "bù",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "You are welcome",
+      "subtitle": "",
+      "ideogram": "不客气",
+      "pronunciation": "bú kè qì",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Thing",
+      "subtitle": "",
+      "ideogram": "东西",
+      "pronunciation": "dōng xi",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Generic mesure word",
+      "subtitle": "Also called \"classifier",
+      "ideogram": "个",
+      "pronunciation": "gè",
+      "text": "In chinese, to say \"one apple\", you must say \"one\" + mesure word + \"apple\". There are a lot of mesure words used for different types of things. \"Gè\" is the most common and it is used for apples, for exemple.",
+      "category": "Measure Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Noon",
+      "subtitle": "",
+      "ideogram": "中午",
+      "pronunciation": "zhōng wǔ",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "China",
+      "subtitle": "",
+      "ideogram": "中国",
+      "pronunciation": "zhōng guó",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": 9,
+      "subtitle": "Nine",
+      "ideogram": "九",
+      "pronunciation": "jiǔ",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Book",
+      "subtitle": "",
+      "ideogram": "书",
+      "pronunciation": "shū",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Buy",
+      "subtitle": "",
+      "ideogram": "买",
+      "pronunciation": "mǎi",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Completed action particle",
+      "subtitle": "",
+      "ideogram": "了",
+      "pronunciation": "le",
+      "text": "It can be used in connection with 要 (yào) to indicate a changement of state in the future. In expressions about time, it can be used in connection with 就要 (jiùyào).",
+      "category": "Particles",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Two",
+      "subtitle": "",
+      "ideogram": "二",
+      "pronunciation": "èr",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": 5,
+      "subtitle": "Five",
+      "ideogram": "五",
+      "pronunciation": "wǔ",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Some",
+      "subtitle": "",
+      "ideogram": "些",
+      "pronunciation": "xiē",
+      "text": "",
+      "category": "Measure Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Person",
+      "subtitle": "",
+      "ideogram": "人",
+      "pronunciation": "rén",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "What",
+      "subtitle": "",
+      "ideogram": "什么",
+      "pronunciation": "shén me",
+      "text": "",
+      "category": "Question Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Today",
+      "subtitle": "",
+      "ideogram": "今天",
+      "pronunciation": "jīn tiān",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "He, him",
+      "subtitle": "",
+      "ideogram": "他",
+      "pronunciation": "tā",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "They",
+      "subtitle": "",
+      "ideogram": "他们",
+      "pronunciation": "tā men",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Can",
+      "subtitle": "",
+      "ideogram": "会",
+      "pronunciation": "huì",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Live",
+      "subtitle": "",
+      "ideogram": "住",
+      "pronunciation": "zhù",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "You",
+      "subtitle": "",
+      "ideogram": "你",
+      "pronunciation": "nǐ",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "You (pl.)",
+      "subtitle": "",
+      "ideogram": "你们",
+      "pronunciation": "nǐ men",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Do",
+      "subtitle": "",
+      "ideogram": "做",
+      "pronunciation": "zuò",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Son",
+      "subtitle": "",
+      "ideogram": "儿子",
+      "pronunciation": "érzi",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Sir",
+      "subtitle": "",
+      "ideogram": "先生",
+      "pronunciation": "xiān sheng",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": 8,
+      "subtitle": "Eight",
+      "ideogram": "八",
+      "pronunciation": "bā",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": 6,
+      "subtitle": "Six",
+      "ideogram": "六",
+      "pronunciation": "liù",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Good-bye",
+      "subtitle": "",
+      "ideogram": "再见",
+      "pronunciation": "zài jiàn",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Write",
+      "subtitle": "",
+      "ideogram": "写",
+      "pronunciation": "xiě",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Cold",
+      "subtitle": "",
+      "ideogram": "冷",
+      "pronunciation": "lěng",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "How many, several",
+      "subtitle": "Used for small numbers",
+      "ideogram": "几",
+      "pronunciation": "jǐ",
+      "text": "It can be used as an interrogative pronoun (\"how many?\"), or to indicate an indetermined quantity (\"several\")",
+      "category": "Question Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Taxi",
+      "subtitle": "",
+      "ideogram": "出租车",
+      "pronunciation": "chū zū chē",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Minute",
+      "subtitle": "",
+      "ideogram": "分钟",
+      "pronunciation": "fēnz hōng",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Front",
+      "subtitle": "",
+      "ideogram": "前面",
+      "pronunciation": "qián miàn",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Beijing",
+      "subtitle": "",
+      "ideogram": "北京",
+      "pronunciation": "běi jīng",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Doctor",
+      "subtitle": "",
+      "ideogram": "医生",
+      "pronunciation": "yī shēng",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Hospital",
+      "subtitle": "",
+      "ideogram": "医院",
+      "pronunciation": "yī yuàn",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": 10,
+      "subtitle": "Ten",
+      "ideogram": "十",
+      "pronunciation": "shí",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Go",
+      "subtitle": "",
+      "ideogram": "去",
+      "pronunciation": "qù",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Call, be called, ask to do",
+      "subtitle": "",
+      "ideogram": "叫",
+      "pronunciation": "jiào",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Eat",
+      "subtitle": "",
+      "ideogram": "吃",
+      "pronunciation": "chī",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Classmate",
+      "subtitle": "",
+      "ideogram": "同学",
+      "pronunciation": "tóng xué",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Name",
+      "subtitle": "",
+      "ideogram": "名字",
+      "pronunciation": "míng zi",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Behind",
+      "subtitle": "",
+      "ideogram": "后面",
+      "pronunciation": "hòu miàn",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Question particle",
+      "subtitle": "",
+      "ideogram": "吗",
+      "pronunciation": "ma",
+      "text": "",
+      "category": "Particles",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Listen",
+      "subtitle": "",
+      "ideogram": "听",
+      "pronunciation": "tīng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Reciprocal particle",
+      "subtitle": "",
+      "ideogram": "呢",
+      "pronunciation": "ne",
+      "text": "This particle is used to send back a question, to ask about a location, to indicate that an action is in progress, to soften a question, to stress a rethorical question, or to emphasize an exageration.",
+      "category": "Particles",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "And",
+      "subtitle": "",
+      "ideogram": "和",
+      "pronunciation": "hé",
+      "text": "",
+      "category": "Conjunction",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Where",
+      "subtitle": "South pronounciation",
+      "ideogram": "哪",
+      "pronunciation": "nǎ",
+      "text": "",
+      "category": "Question Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Where",
+      "subtitle": "North pronouciation",
+      "ideogram": "哪儿",
+      "pronunciation": "nǎr",
+      "text": "",
+      "category": "Question Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Store",
+      "subtitle": "",
+      "ideogram": "商店",
+      "pronunciation": "shāng diàn",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Hello",
+      "subtitle": "On the phone",
+      "ideogram": "喂",
+      "pronunciation": "wèi",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Love, like",
+      "subtitle": "",
+      "ideogram": "喜欢",
+      "pronunciation": "xǐ huān",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Drink",
+      "subtitle": "",
+      "ideogram": "喝",
+      "pronunciation": "hē",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": 4,
+      "subtitle": "Four",
+      "ideogram": "四",
+      "pronunciation": "sì",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Return",
+      "subtitle": "",
+      "ideogram": "回",
+      "pronunciation": "huí",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "In, at",
+      "subtitle": "",
+      "ideogram": "在",
+      "pronunciation": "zài",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Sit",
+      "subtitle": "",
+      "ideogram": "坐",
+      "pronunciation": "zuò",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Piece",
+      "subtitle": "",
+      "ideogram": "块",
+      "pronunciation": "kuài",
+      "text": "",
+      "category": "Measure Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Many, much",
+      "subtitle": "",
+      "ideogram": "多",
+      "pronunciation": "duō",
+      "text": "As an interrogative pronoun, it can be used before an adjective to ask about the intensity; for exemple: 多高? (duō gāo?, how tall is he?).",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "How many, how much",
+      "subtitle": "",
+      "ideogram": "多少",
+      "pronunciation": "duō shǎo",
+      "text": "",
+      "category": "Question Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Big",
+      "subtitle": "",
+      "ideogram": "大",
+      "pronunciation": "dà",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Weather",
+      "subtitle": "",
+      "ideogram": "天气",
+      "pronunciation": "tiān qì",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Too",
+      "subtitle": "",
+      "ideogram": "太",
+      "pronunciation": "tài",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Daughter",
+      "subtitle": "",
+      "ideogram": "女儿",
+      "pronunciation": "nǚ ér",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "She, her",
+      "subtitle": "",
+      "ideogram": "她",
+      "pronunciation": "tā",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "They (females, pl.)",
+      "subtitle": "",
+      "ideogram": "她们",
+      "pronunciation": "tā men",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Good",
+      "subtitle": "",
+      "ideogram": "好",
+      "pronunciation": "hǎo",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Mother",
+      "subtitle": "",
+      "ideogram": "妈妈",
+      "pronunciation": "mā ma",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Character",
+      "subtitle": "",
+      "ideogram": "字",
+      "pronunciation": "zì",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Study",
+      "subtitle": "",
+      "ideogram": "学习",
+      "pronunciation": "xué xí",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "School",
+      "subtitle": "",
+      "ideogram": "学校",
+      "pronunciation": "xué xiào",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Student",
+      "subtitle": "",
+      "ideogram": "学生",
+      "pronunciation": "xué shēng",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Home",
+      "subtitle": "",
+      "ideogram": "家",
+      "pronunciation": "jiā",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Sorry",
+      "subtitle": "",
+      "ideogram": "对不起",
+      "pronunciation": "duì bù qǐ",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Small",
+      "subtitle": "",
+      "ideogram": "小",
+      "pronunciation": "xiǎo",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Miss",
+      "subtitle": "",
+      "ideogram": "小姐",
+      "pronunciation": "xiǎo jiě",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Few, little",
+      "subtitle": "",
+      "ideogram": "少",
+      "pronunciation": "shǎo",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Year",
+      "subtitle": "",
+      "ideogram": "岁",
+      "pronunciation": "suì",
+      "text": "",
+      "category": "Measure Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Work",
+      "subtitle": "",
+      "ideogram": "工作",
+      "pronunciation": "gōng zuò",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Year",
+      "subtitle": "",
+      "ideogram": "年",
+      "pronunciation": "nián",
+      "text": "It is a \"mesure word\" so it doesn't need a mesure word before it.",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Open",
+      "subtitle": "",
+      "ideogram": "开",
+      "pronunciation": "kāi",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Quite, very",
+      "subtitle": "",
+      "ideogram": "很",
+      "pronunciation": "hěn",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "How, why",
+      "subtitle": "Express a surprise mood",
+      "ideogram": "怎么",
+      "pronunciation": "zěn me",
+      "text": "",
+      "category": "Question Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "How about",
+      "subtitle": "",
+      "ideogram": "怎么样",
+      "pronunciation": "zěn me yàng",
+      "text": "",
+      "category": "Question Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Want",
+      "subtitle": "",
+      "ideogram": "想",
+      "pronunciation": "xiǎng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "I, me",
+      "subtitle": "",
+      "ideogram": "我",
+      "pronunciation": "wǒ",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "We, us",
+      "subtitle": "",
+      "ideogram": "我们",
+      "pronunciation": "wǒ men",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Call up",
+      "subtitle": "",
+      "ideogram": "打电话",
+      "pronunciation": "dǎ diàn huà",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Day",
+      "subtitle": "",
+      "ideogram": "日",
+      "pronunciation": "rì",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Time",
+      "subtitle": "",
+      "ideogram": "时候",
+      "pronunciation": "shí hou",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Tomorrow",
+      "subtitle": "",
+      "ideogram": "明天",
+      "pronunciation": "míng tiān",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Week",
+      "subtitle": "",
+      "ideogram": "星期",
+      "pronunciation": "xīng qī",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Yesterday",
+      "subtitle": "",
+      "ideogram": "昨天",
+      "pronunciation": "zuó tiān",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Be",
+      "subtitle": "",
+      "ideogram": "是",
+      "pronunciation": "shì",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Month",
+      "subtitle": "",
+      "ideogram": "月",
+      "pronunciation": "yuè",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Have",
+      "subtitle": "",
+      "ideogram": "有",
+      "pronunciation": "yǒu",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Friend",
+      "subtitle": "",
+      "ideogram": "朋友",
+      "pronunciation": "péng you",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Volume",
+      "subtitle": "",
+      "ideogram": "本",
+      "pronunciation": "běn",
+      "text": "",
+      "category": "Measure Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Come",
+      "subtitle": "",
+      "ideogram": "来",
+      "pronunciation": "lái",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Cup",
+      "subtitle": "",
+      "ideogram": "杯子",
+      "pronunciation": "bēi zi",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Desk",
+      "subtitle": "",
+      "ideogram": "桌子",
+      "pronunciation": "zhuō zi",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Chair",
+      "subtitle": "",
+      "ideogram": "椅子",
+      "pronunciation": "yǐ zi",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Water",
+      "subtitle": "",
+      "ideogram": "水",
+      "pronunciation": "shuǐ",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Fruit",
+      "subtitle": "",
+      "ideogram": "水果",
+      "pronunciation": "shuǐ guǒ",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Chinese",
+      "subtitle": "",
+      "ideogram": "汉语",
+      "pronunciation": "hàn yǔ",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "No",
+      "subtitle": "Negation for \"to have",
+      "ideogram": "没",
+      "pronunciation": "méi",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "It doesn’t matter",
+      "subtitle": "",
+      "ideogram": "没关系",
+      "pronunciation": "méi guān xì",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Beautiful",
+      "subtitle": "",
+      "ideogram": "漂亮",
+      "pronunciation": "piào liàng",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Train station",
+      "subtitle": "",
+      "ideogram": "火车站",
+      "pronunciation": "huǒ chē zhàn",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Dot, spot",
+      "subtitle": "",
+      "ideogram": "点",
+      "pronunciation": "diǎn",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Hot",
+      "subtitle": "",
+      "ideogram": "热",
+      "pronunciation": "rè",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Love",
+      "subtitle": "",
+      "ideogram": "爱",
+      "pronunciation": "ài",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Father",
+      "subtitle": "",
+      "ideogram": "爸爸",
+      "pronunciation": "bà ba",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Dog",
+      "subtitle": "",
+      "ideogram": "狗",
+      "pronunciation": "gǒu",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Cat",
+      "subtitle": "",
+      "ideogram": "猫",
+      "pronunciation": "māo",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Now",
+      "subtitle": "",
+      "ideogram": "现在",
+      "pronunciation": "xiàn zài",
+      "text": "",
+      "category": "Time",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Movie",
+      "subtitle": "",
+      "ideogram": "电影",
+      "pronunciation": "diàn yǐng",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Computer",
+      "subtitle": "",
+      "ideogram": "电脑",
+      "pronunciation": "diàn nǎo",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Television",
+      "subtitle": "",
+      "ideogram": "电视",
+      "pronunciation": "diàn shì",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Possessive particle",
+      "subtitle": "",
+      "ideogram": "的",
+      "pronunciation": "de",
+      "text": "This particle can be put in the middle of 2 nouns to connect them: the first noun is the owner of the second noun. The particle can also connect an adjective and a noun that posses the quality indicated by the adjective. When it is already clear who is the owner or the noun that posses the quality, the owner and the noun can be omitted. It can be used also to form sentences that act as a complement of a noun.",
+      "category": "Particles",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Look",
+      "subtitle": "",
+      "ideogram": "看",
+      "pronunciation": "kàn",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "See",
+      "subtitle": "",
+      "ideogram": "看见",
+      "pronunciation": "kàn jiàn",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Sleep",
+      "subtitle": "",
+      "ideogram": "睡觉",
+      "pronunciation": "shuì jiào",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Rice",
+      "subtitle": "",
+      "ideogram": "米饭",
+      "pronunciation": "mǐ fàn",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Teacher",
+      "subtitle": "",
+      "ideogram": "老师",
+      "pronunciation": "lǎo shī",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Can, be able to",
+      "subtitle": "",
+      "ideogram": "能",
+      "pronunciation": "néng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Apple",
+      "subtitle": "",
+      "ideogram": "苹果",
+      "pronunciation": "píng guǒ",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Tea",
+      "subtitle": "",
+      "ideogram": "茶",
+      "pronunciation": "chá",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Vegetable",
+      "subtitle": "",
+      "ideogram": "菜",
+      "pronunciation": "cài",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Cloth",
+      "subtitle": "",
+      "ideogram": "衣服",
+      "pronunciation": "yī fu",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Know",
+      "subtitle": "",
+      "ideogram": "认识",
+      "pronunciation": "rèn shi",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Speak",
+      "subtitle": "",
+      "ideogram": "说话",
+      "pronunciation": "shuō huà",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Please, to invite",
+      "subtitle": "Invite to do something",
+      "ideogram": "请",
+      "pronunciation": "qǐng",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Read",
+      "subtitle": "",
+      "ideogram": "读",
+      "pronunciation": "dú",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Who",
+      "subtitle": "",
+      "ideogram": "谁",
+      "pronunciation": "shuí",
+      "text": "",
+      "category": "Question Words",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Thank",
+      "subtitle": "",
+      "ideogram": "谢谢",
+      "pronunciation": "xiè xie",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Here, this",
+      "subtitle": "South pronounciation",
+      "ideogram": "这",
+      "pronunciation": "zhè",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Here, this",
+      "subtitle": "North pronouciation",
+      "ideogram": "这儿",
+      "pronunciation": "zhèr",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "There, that",
+      "subtitle": "South pronounciation",
+      "ideogram": "那",
+      "pronunciation": "nà",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "There, that",
+      "subtitle": "North pronouciation",
+      "ideogram": "那儿",
+      "pronunciation": "nàr",
+      "text": "",
+      "category": "Pronouns",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "All",
+      "subtitle": "",
+      "ideogram": "都",
+      "pronunciation": "dōu",
+      "text": "It can be used in connection with 了 (le) to mean \"already\".",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Inside",
+      "subtitle": "",
+      "ideogram": "里面",
+      "pronunciation": "lǐ miàn",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Money",
+      "subtitle": "",
+      "ideogram": "钱",
+      "pronunciation": "qián",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Zero",
+      "subtitle": "",
+      "ideogram": "零",
+      "pronunciation": "líng",
+      "text": "",
+      "category": "Numbers",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Airplane",
+      "subtitle": "",
+      "ideogram": "飞机",
+      "pronunciation": "fēi jī",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Restaurant",
+      "subtitle": "",
+      "ideogram": "饭店",
+      "pronunciation": "fàn diàn",
+      "text": "",
+      "category": "Places & Directions",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Happy",
+      "subtitle": "",
+      "ideogram": "高兴",
+      "pronunciation": "gāo xìng",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 1
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Together",
+      "subtitle": "",
+      "ideogram": "一起",
+      "pronunciation": "yì qǐ",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Husband",
+      "subtitle": "",
+      "ideogram": "丈夫",
+      "pronunciation": "zhàng fu",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Be on duty",
+      "subtitle": "",
+      "ideogram": "上班",
+      "pronunciation": "shàng bān",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": 2,
+      "subtitle": "two",
+      "ideogram": "两",
+      "pronunciation": "liǎng",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Why",
+      "subtitle": "",
+      "ideogram": "为什么",
+      "pronunciation": "wèi shén me",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Likewise",
+      "subtitle": "",
+      "ideogram": "也",
+      "pronunciation": "yě",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Matter",
+      "subtitle": "",
+      "ideogram": "事情",
+      "pronunciation": "shì qing",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Person",
+      "subtitle": "",
+      "ideogram": "人",
+      "pronunciation": "rén",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Introduce",
+      "subtitle": "",
+      "ideogram": "介绍",
+      "pronunciation": "jiè shào",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "From",
+      "subtitle": "Starting point",
+      "ideogram": "从",
+      "pronunciation": "cóng",
+      "text": "This preposition is used to indicate a starting point and express a distance in time, space, or to a goal.Often used in connection with 到 (to, dào)",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Piece",
+      "subtitle": "",
+      "ideogram": "件",
+      "pronunciation": "jiàn",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Rest",
+      "subtitle": "",
+      "ideogram": "休息",
+      "pronunciation": "xiū xi",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "But",
+      "subtitle": "",
+      "ideogram": "但是",
+      "pronunciation": "dàn shì",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Live",
+      "subtitle": "",
+      "ideogram": "住",
+      "pronunciation": "zhù",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Cheap",
+      "subtitle": "",
+      "ideogram": "便宜",
+      "pronunciation": "pián yi",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Yuan",
+      "subtitle": "",
+      "ideogram": "元",
+      "pronunciation": "yuán",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Bus",
+      "subtitle": "",
+      "ideogram": "公共汽车",
+      "pronunciation": "gōng gòng qì chē",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Kilogram",
+      "subtitle": "",
+      "ideogram": "公斤",
+      "pronunciation": "gōng jīn",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Again",
+      "subtitle": "Repetition of an action",
+      "ideogram": "再",
+      "pronunciation": "zài",
+      "text": "",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Write",
+      "subtitle": "",
+      "ideogram": "写",
+      "pronunciation": "xiě",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Prepare",
+      "subtitle": "",
+      "ideogram": "准备",
+      "pronunciation": "zhǔn bèi",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Come, leave",
+      "subtitle": "Go out",
+      "ideogram": "出",
+      "pronunciation": "chū",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Other",
+      "subtitle": "",
+      "ideogram": "别",
+      "pronunciation": "bié",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Arrive",
+      "subtitle": "",
+      "ideogram": "到",
+      "pronunciation": "dào",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Thousand",
+      "subtitle": "",
+      "ideogram": "千",
+      "pronunciation": "qiān",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Last year",
+      "subtitle": "",
+      "ideogram": "去年",
+      "pronunciation": "qù nián",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Can",
+      "subtitle": "",
+      "ideogram": "可以",
+      "pronunciation": "kě yǐ",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "May / probably",
+      "subtitle": "",
+      "ideogram": "可能",
+      "pronunciation": "kě néng",
+      "text": "As a verb, the meaning is \"may\". When the meaning is \"probably\", it is always placed before the subject of before the verb.",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Right",
+      "subtitle": "",
+      "ideogram": "右边",
+      "pronunciation": "yòu biān",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Number",
+      "subtitle": "",
+      "ideogram": "号",
+      "pronunciation": "hào",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Towards",
+      "subtitle": "",
+      "ideogram": "向",
+      "pronunciation": "xiàng",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Right?",
+      "subtitle": "Particle to soften an affirmation",
+      "ideogram": "吧",
+      "pronunciation": "ba",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Tell",
+      "subtitle": "",
+      "ideogram": "告诉",
+      "pronunciation": "gào sù",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Coffee",
+      "subtitle": "",
+      "ideogram": "咖啡",
+      "pronunciation": "kā fēi",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Brother",
+      "subtitle": "",
+      "ideogram": "哥哥",
+      "pronunciation": "gē ge",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Sing",
+      "subtitle": "",
+      "ideogram": "唱歌",
+      "pronunciation": "chàng gē",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Answer",
+      "subtitle": "",
+      "ideogram": "回答",
+      "pronunciation": "huí dá",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Because",
+      "subtitle": "Introducing a premise",
+      "ideogram": "因为",
+      "pronunciation": "yīn wèi",
+      "text": "",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Out",
+      "subtitle": "",
+      "ideogram": "外",
+      "pronunciation": "wài",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Everyone",
+      "subtitle": "",
+      "ideogram": "大家",
+      "pronunciation": "dà jiā",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Woman",
+      "subtitle": "",
+      "ideogram": "女人",
+      "pronunciation": "nǚ rén",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Delicioous",
+      "subtitle": "",
+      "ideogram": "好吃",
+      "pronunciation": "hǎo chī",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Younger sister",
+      "subtitle": "",
+      "ideogram": "妹妹",
+      "pronunciation": "mèi mei",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Wife",
+      "subtitle": "",
+      "ideogram": "妻子",
+      "pronunciation": "qī zi",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Elder sister",
+      "subtitle": "",
+      "ideogram": "姐姐",
+      "pronunciation": "jiě jie",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Surname",
+      "subtitle": "",
+      "ideogram": "姓",
+      "pronunciation": "xìng",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Child",
+      "subtitle": "",
+      "ideogram": "孩子",
+      "pronunciation": "hái zi",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "It",
+      "subtitle": "",
+      "ideogram": "它",
+      "pronunciation": "tā",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Finish",
+      "subtitle": "",
+      "ideogram": "完",
+      "pronunciation": "wán",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Right / for, to, towards",
+      "subtitle": "",
+      "ideogram": "对",
+      "pronunciation": "duì",
+      "text": "",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Small",
+      "subtitle": "",
+      "ideogram": "小",
+      "pronunciation": "xiǎo",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Hour",
+      "subtitle": "",
+      "ideogram": "小时",
+      "pronunciation": "xiǎo shí",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "At once",
+      "subtitle": "Time adverb",
+      "ideogram": "就",
+      "pronunciation": "jiǜ",
+      "text": "This time adverb is used to stress the time of an action.",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Left side",
+      "subtitle": "",
+      "ideogram": "左边",
+      "pronunciation": "zuǒ biān",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Already",
+      "subtitle": "",
+      "ideogram": "已经",
+      "pronunciation": "yǐ jīng",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Hope",
+      "subtitle": "",
+      "ideogram": "希望",
+      "pronunciation": "xī wàng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Help",
+      "subtitle": "",
+      "ideogram": "帮助",
+      "pronunciation": "bāng zhù",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Begin",
+      "subtitle": "",
+      "ideogram": "开始",
+      "pronunciation": "kāi shǐ",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Younger brother",
+      "subtitle": "",
+      "ideogram": "弟弟",
+      "pronunciation": "dì di",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Sheet",
+      "subtitle": "",
+      "ideogram": "张",
+      "pronunciation": "zhāng",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Particle of possibility",
+      "subtitle": "Effect, degree, possibility",
+      "ideogram": "得",
+      "pronunciation": "de",
+      "text": "Structural particle: used after a verb (or adjective as main verb), linking it to following phrase indicating effect, degree, possibility etc;",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Busy",
+      "subtitle": "",
+      "ideogram": "忙",
+      "pronunciation": "máng",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Fast",
+      "subtitle": "",
+      "ideogram": "快",
+      "pronunciation": "kuài",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Happy",
+      "subtitle": "",
+      "ideogram": "快乐",
+      "pronunciation": "kuài lè",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "You",
+      "subtitle": "",
+      "ideogram": "您",
+      "pronunciation": "nín",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "meaning",
+      "subtitle": "",
+      "ideogram": "意思",
+      "pronunciation": "yì si",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Slow",
+      "subtitle": "",
+      "ideogram": "慢",
+      "pronunciation": "màn",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Understand",
+      "subtitle": "",
+      "ideogram": "懂",
+      "pronunciation": "dǒng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Room",
+      "subtitle": "",
+      "ideogram": "房间",
+      "pronunciation": "fáng jiān",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "So",
+      "subtitle": "Introducing a conclusion",
+      "ideogram": "所以",
+      "pronunciation": "suǒ yǐ",
+      "text": "",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Phone",
+      "subtitle": "",
+      "ideogram": "手机",
+      "pronunciation": "shǒu jī",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Watch",
+      "subtitle": "",
+      "ideogram": "手表",
+      "pronunciation": "shǒu biǎo",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Call up",
+      "subtitle": "",
+      "ideogram": "打电话",
+      "pronunciation": "dǎ diàn huà",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Play basketball",
+      "subtitle": "",
+      "ideogram": "打篮球",
+      "pronunciation": "dǎ lán qiú",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Find",
+      "subtitle": "",
+      "ideogram": "找",
+      "pronunciation": "zhǎo",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Newspaper",
+      "subtitle": "",
+      "ideogram": "报纸",
+      "pronunciation": "bào zhǐ",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Classroom",
+      "subtitle": "",
+      "ideogram": "教室",
+      "pronunciation": "jiào shì",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "New",
+      "subtitle": "",
+      "ideogram": "新",
+      "pronunciation": "xīn",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Side",
+      "subtitle": "",
+      "ideogram": "旁边",
+      "pronunciation": "páng biān",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Travel",
+      "subtitle": "",
+      "ideogram": "旅游",
+      "pronunciation": "lǚ yóu",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Morning",
+      "subtitle": "",
+      "ideogram": "早上",
+      "pronunciation": "zǎo shàng",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Time",
+      "subtitle": "",
+      "ideogram": "时间",
+      "pronunciation": "shí jiān",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Night",
+      "subtitle": "",
+      "ideogram": "晚上",
+      "pronunciation": "wǎn shàng",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Fine",
+      "subtitle": "",
+      "ideogram": "晴",
+      "pronunciation": "qíng",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Most, best",
+      "subtitle": "",
+      "ideogram": "最",
+      "pronunciation": "zuì",
+      "text": "The most common way to form a superlative (like best, worst, biggest, smallest, etc.) in Chinese is to use 最 (zuì) before an adjective (and a few select verbs).",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Waiter",
+      "subtitle": "",
+      "ideogram": "服务员",
+      "pronunciation": "fú wù yuán",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Airport",
+      "subtitle": "",
+      "ideogram": "机场",
+      "pronunciation": "jī chǎng",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Number",
+      "subtitle": "Number of times",
+      "ideogram": "次",
+      "pronunciation": "cì",
+      "text": "It is used after a number and before the ver. There are 2 exception: 1) when it is used in connection with a place, it is put after the place; 2) when it is use in connection with a pronoun, it is put after the pronoun.",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Welcome",
+      "subtitle": "",
+      "ideogram": "欢迎",
+      "pronunciation": "huān yíng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Be being",
+      "subtitle": "",
+      "ideogram": "正在",
+      "pronunciation": "zhèng zài",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "This",
+      "subtitle": "",
+      "ideogram": "此",
+      "pronunciation": "cǐ",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Every, each",
+      "subtitle": "",
+      "ideogram": "每",
+      "pronunciation": "měi",
+      "text": "Exemples: 每天 (měi tiān, every day), 每年 (měi nián, every year),  每个月 (měi yuè, every month), 每个星期 (měi xīngqí, every week).",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Wash",
+      "subtitle": "",
+      "ideogram": "洗",
+      "pronunciation": "xǐ",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Swim",
+      "subtitle": "",
+      "ideogram": "游泳",
+      "pronunciation": "yóu yǒng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Milk",
+      "subtitle": "",
+      "ideogram": "牛奶",
+      "pronunciation": "niú nǎi",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Play",
+      "subtitle": "",
+      "ideogram": "玩",
+      "pronunciation": "wán",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Birthday",
+      "subtitle": "",
+      "ideogram": "生日",
+      "pronunciation": "shēng rì",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Fall ill",
+      "subtitle": "",
+      "ideogram": "生病",
+      "pronunciation": "shēng bìng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Man",
+      "subtitle": "",
+      "ideogram": "男人",
+      "pronunciation": "nán rén",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "White",
+      "subtitle": "",
+      "ideogram": "白",
+      "pronunciation": "bái",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Real, really",
+      "subtitle": "",
+      "ideogram": "真",
+      "pronunciation": "zhēn",
+      "text": "It can bu put before and adjective to set an exclamatory mood, for exemple: 你真好 (nǐ zhēn hǎo, you are really nice)",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Eye",
+      "subtitle": "",
+      "ideogram": "眼睛",
+      "pronunciation": "yǎn jīng",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Action in progress",
+      "subtitle": "",
+      "ideogram": "着",
+      "pronunciation": "zhe",
+      "text": "after a verb to indicate an action is in a progress or in a certain state that continues",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Know",
+      "subtitle": "",
+      "ideogram": "知道",
+      "pronunciation": "zhī dào",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Ticket",
+      "subtitle": "",
+      "ideogram": "票",
+      "pronunciation": "piào",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Leave, from, until",
+      "subtitle": "",
+      "ideogram": "离",
+      "pronunciation": "lí",
+      "text": "To express the distance from a place a moment in time, or a purpose. Often used together with 近 (jìn, close) and 远 (yuǎn, far).",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Wear",
+      "subtitle": "",
+      "ideogram": "穿",
+      "pronunciation": "chuān",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Smile",
+      "subtitle": "",
+      "ideogram": "笑",
+      "pronunciation": "xiào",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "First",
+      "subtitle": "",
+      "ideogram": "第一",
+      "pronunciation": "dì yī",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Wait",
+      "subtitle": "",
+      "ideogram": "等",
+      "pronunciation": "děng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Tire",
+      "subtitle": "",
+      "ideogram": "累",
+      "pronunciation": "lèi",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Red",
+      "subtitle": "",
+      "ideogram": "红",
+      "pronunciation": "hóng",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Mutton",
+      "subtitle": "",
+      "ideogram": "羊肉",
+      "pronunciation": "yáng ròu",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Exam",
+      "subtitle": "",
+      "ideogram": "考试",
+      "pronunciation": "kǎo shì",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Bike",
+      "subtitle": "",
+      "ideogram": "自行车",
+      "pronunciation": "zì xíng chē",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Boat",
+      "subtitle": "",
+      "ideogram": "船",
+      "pronunciation": "chuán",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Medicine",
+      "subtitle": "",
+      "ideogram": "药",
+      "pronunciation": "yào",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Watermelon",
+      "subtitle": "",
+      "ideogram": "西瓜",
+      "pronunciation": "xī guā",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Ask for, want to",
+      "subtitle": "Express a desire",
+      "ideogram": "要",
+      "pronunciation": "yào",
+      "text": "When used before a verb, it indicates the desire to do something. The negative form is 不想 (bù xiǎng)",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Think",
+      "subtitle": "",
+      "ideogram": "觉得",
+      "pronunciation": "jué dé",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Let",
+      "subtitle": "to let to do something",
+      "ideogram": "让",
+      "pronunciation": "ràng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Lesson",
+      "subtitle": "",
+      "ideogram": "课",
+      "pronunciation": "kè",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Who",
+      "subtitle": "",
+      "ideogram": "谁",
+      "pronunciation": "shéi",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Expensive",
+      "subtitle": "",
+      "ideogram": "贵",
+      "pronunciation": "guì",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Walk",
+      "subtitle": "",
+      "ideogram": "走",
+      "pronunciation": "zǒu",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Get up",
+      "subtitle": "",
+      "ideogram": "起床",
+      "pronunciation": "qǐ chuáng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Run",
+      "subtitle": "",
+      "ideogram": "跑步",
+      "pronunciation": "pǎo bù",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Road",
+      "subtitle": "",
+      "ideogram": "路",
+      "pronunciation": "lù",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Dance",
+      "subtitle": "",
+      "ideogram": "跳舞",
+      "pronunciation": "tiào wǔ",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Play footbal",
+      "subtitle": "",
+      "ideogram": "踢足球",
+      "pronunciation": "tī zú qiú",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Body",
+      "subtitle": "",
+      "ideogram": "身体",
+      "pronunciation": "shēn tǐ",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Completition particle",
+      "subtitle": "Completion or a past state",
+      "ideogram": "过",
+      "pronunciation": "guò",
+      "text": "Particle used after a verb as a complement, indicating completion or a past state",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Exercise",
+      "subtitle": "",
+      "ideogram": "运动",
+      "pronunciation": "yùn dòng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Close",
+      "subtitle": "",
+      "ideogram": "近",
+      "pronunciation": "jìn",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Not so..., a little less than...",
+      "subtitle": "",
+      "ideogram": "还",
+      "pronunciation": "hái",
+      "text": "Used before an adjective, this adverb moderate adjectives or verbs.",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Enter",
+      "subtitle": "",
+      "ideogram": "进",
+      "pronunciation": "jìn",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Far",
+      "subtitle": "",
+      "ideogram": "远",
+      "pronunciation": "yuǎn",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Present",
+      "subtitle": "",
+      "ideogram": "送",
+      "pronunciation": "sòng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Wrong",
+      "subtitle": "",
+      "ideogram": "错",
+      "pronunciation": "cuò",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Long",
+      "subtitle": "",
+      "ideogram": "长",
+      "pronunciation": "cháng",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Door",
+      "subtitle": "",
+      "ideogram": "门",
+      "pronunciation": "mén",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Ask",
+      "subtitle": "",
+      "ideogram": "问",
+      "pronunciation": "wèn",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Question",
+      "subtitle": "",
+      "ideogram": "问题",
+      "pronunciation": "wèn tí",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Cloudy",
+      "subtitle": "",
+      "ideogram": "阴",
+      "pronunciation": "yīn",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Snow",
+      "subtitle": "",
+      "ideogram": "雪",
+      "pronunciation": "xué",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Very",
+      "subtitle": "",
+      "ideogram": "非常",
+      "pronunciation": "fēi cháng",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Topic",
+      "subtitle": "",
+      "ideogram": "题",
+      "pronunciation": "tí",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Color",
+      "subtitle": "",
+      "ideogram": "颜色",
+      "pronunciation": "yán sè",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Restaunt",
+      "subtitle": "",
+      "ideogram": "饭馆",
+      "pronunciation": "fàn guǎn",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Tall",
+      "subtitle": "",
+      "ideogram": "高",
+      "pronunciation": "gāo",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Fish",
+      "subtitle": "",
+      "ideogram": "鱼",
+      "pronunciation": "yú",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Egg",
+      "subtitle": "",
+      "ideogram": "鸡蛋",
+      "pronunciation": "jī dàn",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Black",
+      "subtitle": "",
+      "ideogram": "黑",
+      "pronunciation": "hēi",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Under",
+      "subtitle": "",
+      "ideogram": "下面",
+      "pronunciation": "xià miàn",
+      "text": "It is placed after the noun, for exemple 桌子 下面 (zhuōzi xiàmiàn, under the desk)",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Leave the hospital",
+      "subtitle": "",
+      "ideogram": "出院",
+      "pronunciation": "chū yuàn",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Meter",
+      "subtitle": "",
+      "ideogram": "米",
+      "pronunciation": "mǐ",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Middle",
+      "subtitle": "",
+      "ideogram": "中间",
+      "pronunciation": "zhōng jiān",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Front",
+      "subtitle": "",
+      "ideogram": "前边",
+      "pronunciation": "qián biān",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Right side",
+      "subtitle": "",
+      "ideogram": "右边",
+      "pronunciation": "yòu biān",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Back",
+      "subtitle": "",
+      "ideogram": "后边",
+      "pronunciation": "hòu biān",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Nord",
+      "subtitle": "",
+      "ideogram": "北",
+      "pronunciation": "běi",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Send, deliver",
+      "subtitle": "",
+      "ideogram": "送",
+      "pronunciation": "sòng",
+      "text": "",
+      "category": "Verbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Give a try",
+      "subtitle": "Used after a verb",
+      "ideogram": "一下",
+      "pronunciation": "yí xià",
+      "text": "To perform an action just for a little time, or to soften an order.",
+      "category": "Expressions",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Pink",
+      "subtitle": "The pink color",
+      "ideogram": "粉色",
+      "pronunciation": "fěn sè",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Pink",
+      "subtitle": "Adjective",
+      "ideogram": "粉",
+      "pronunciation": "fěn",
+      "text": "",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Red",
+      "subtitle": "The red color",
+      "ideogram": "红色",
+      "pronunciation": "hóng sè",
+      "text": "",
+      "category": "People & Things",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "To, for, give",
+      "subtitle": "Preposition or verb",
+      "ideogram": "给",
+      "pronunciation": "gěi",
+      "text": "",
+      "category": "",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Here you are!",
+      "subtitle": "",
+      "ideogram": "给你",
+      "pronunciation": "gěi nǐ",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Yes or not?",
+      "subtitle": "",
+      "ideogram": "是不是",
+      "pronunciation": "Shì bu shì",
+      "text": "Used to ask a question when you already know the answer, frequently used at the beginning or end of a sentence, but it can also be used in the middle in same cases.",
+      "category": "Expressions",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Great!",
+      "subtitle": "",
+      "ideogram": "好啊",
+      "pronunciation": "hǎo a",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Day",
+      "subtitle": "",
+      "ideogram": "天",
+      "pronunciation": "tiān",
+      "text": "It is a \"mesure word\" so it doesn't need a mesure word before it.",
+      "category": "Time",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "So, then",
+      "subtitle": "",
+      "ideogram": "就",
+      "pronunciation": "jiù",
+      "text": "Used to make a conclusion",
+      "category": "Adjectives and Adverbs",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "A little",
+      "subtitle": "",
+      "ideogram": "有点儿",
+      "pronunciation": "yǒu diǎnr",
+      "text": "Used before an adjective to complain",
+      "category": "Expressions",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Okay?",
+      "subtitle": "To ask for somebody's opinion",
+      "ideogram": "好吗",
+      "pronunciation": "hǎo ma",
+      "text": "",
+      "category": "Expressions",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "or not? / Not as ... than",
+      "subtitle": "",
+      "ideogram": "没右",
+      "pronunciation": "méi yòu",
+      "text": "Used at the end of a sentence it invites to exlude the opposit of what has been said. It can also be used to make a comparaison denying the identity.",
+      "category": "Expressions",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Ordinal number particle",
+      "subtitle": "To express ordinal numbers",
+      "ideogram": "第",
+      "pronunciation": "dì",
+      "text": "This particle must be put before a number to form an ordinal number.",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Don't",
+      "subtitle": "Expressing a prohibition",
+      "ideogram": "不要",
+      "pronunciation": "bú yào",
+      "text": "If it is used in connection with the particle 了 (le), it means \"stop doing\".",
+      "category": "Expressions",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Stop",
+      "subtitle": "Negative imperative particle",
+      "ideogram": "别",
+      "pronunciation": "bié",
+      "text": "If it is used in connection with the particle 了 (le), it means \"stop doing\".",
+      "category": "Expressions",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "More than",
+      "subtitle": "Comparative particle",
+      "ideogram": "比",
+      "pronunciation": "bǐ",
+      "text": "This particle is used to compare things. It can be used in connection with an expression that states the grade of the difference beetween the compared elements.",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "A little bit",
+      "subtitle": "",
+      "ideogram": "一点儿",
+      "pronunciation": "yí diǎnr",
+      "text": "It can be used in connection with 比 (bǐ) to express the grade of the comparaison.",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Just as",
+      "subtitle": "",
+      "ideogram": "一样",
+      "pronunciation": "yí yàng",
+      "text": "",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Not more than",
+      "subtitle": "",
+      "ideogram": "不比",
+      "pronunciation": "bú bǐ",
+      "text": "",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "To, towards",
+      "subtitle": "Indicating a direction",
+      "ideogram": "往",
+      "pronunciation": "wǎng",
+      "text": "",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "Although",
+      "subtitle": "To express a contrasting premise",
+      "ideogram": "虽然",
+      "pronunciation": "suī rán",
+      "text": "It introduces a premise that contrasts with the conclusion, in connection with 但是 (dàn shì) which introduces the conclusion.",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  },
+  {
+    "model": "dictionary.Word",
+    "fields": {
+      "meaning": "But",
+      "subtitle": "To express a contrasting conlusion",
+      "ideogram": "但是",
+      "pronunciation": "dàn shì",
+      "text": "It introduces a conclusion that contrasts with the premise, in connection with 虽然 (suī rán ) which introduces the premise.",
+      "category": "Grammar point",
+      "HSK": 2
+    }
+  }
+]
