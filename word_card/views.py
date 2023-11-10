@@ -33,9 +33,17 @@ class WordCardOptins(APIView):
             word = Word.objects.filter(ideogram=arr[i])
             lesson = Lesson.objects.filter(id=id)
             if word.exists() and lesson.exists():
-    
+                w=WordCard.objects.create(
+                    dictionary=word.first(),
+                    word=arr[i],
+                    author=request.user,
+                    lesson=lesson.first(),
+                    
+                )
+                w.save()
+            else:
                 data = {"status": "error", "error": "Word Does Not Exist"}
-                resp.append(data)
+            resp.append(data)
         return Response(resp)
 
     def put(self, request, id, *args, **kwargs):
