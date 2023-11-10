@@ -33,16 +33,7 @@ class WordCardOptins(APIView):
             word = Word.objects.filter(ideogram=arr[i])
             lesson = Lesson.objects.filter(id=id)
             if word.exists() and lesson.exists():
-                card = WordCard.objects.create(
-                    word=arr[i],
-                    lesson=lesson.first(),
-                    author=request.user,
-                    dictionary=word.first(),
-                )
-                card.save()
-                serializer = WordCardSerializer(card)
-                resp.append(serializer.data)
-            else:
+    
                 data = {"status": "error", "error": "Word Does Not Exist"}
                 resp.append(data)
         return Response(resp)
@@ -92,6 +83,32 @@ class WordCardOptins(APIView):
         )
         word_card.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+
+
+
+
+class WordCardUpdate(APIView):
+    def put(self, request, id=None):
+        word_cards = WordCard.objects.filter(id=id).first()
+        serializer = WordCardSerializer(word_cards, data=request.data)
+        dictionary = request.data['dictionary']
+        dict_id = dictionary['id']
+        hsk = dictionary['HSK']
+        word_dict = Word.objects.filter(id=dict_id).first()
+        word_dict.HSK = hsk
+        word_dict.save()
+        print(word_dict.HSK)
+        # word = word_cards.dictionary
+        # if (hsk):
+            # word.HSK = hsk
+            # word.save()
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 
 class WordCardList(APIView):

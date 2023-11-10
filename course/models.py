@@ -16,7 +16,7 @@ class Lesson(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
     last_updated = models.DateTimeField(blank=True, editable=False)
     arrangement_number = models.IntegerField(null=True, default=0)
-
+    info_type = models.CharField(max_length=100,default="lesson",editable=False)
     def __str__(self):
         return self.title
 
@@ -31,10 +31,11 @@ class Course(models.Model):
     last_updated = models.DateTimeField(blank=True, editable=False)
     date_added = models.DateTimeField(auto_now_add=True)
     arrangement_number = models.IntegerField(null=True, default=0)
-
+    info_type = models.CharField(max_length=100,default="course",editable=False)
     def __str__(self):
         return self.title
 
     def save(self, *args, **kwargs):
         self.last_updated = timezone.now()
         super(Course, self).save(*args, **kwargs)
+ 

@@ -33,6 +33,18 @@ DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = ["*"]
 
 
+JWT_AUTH = {
+    # how long the original token is valid for
+    'JWT_EXPIRATION_DELTA': timedelta(days=10),
+
+    # allow refreshing of tokens
+    'JWT_ALLOW_REFRESH': True,
+
+    # this is the maximum time AFTER the token was issued that
+    # it can be refreshed.  exprired tokens can't be refreshed.
+    'JWT_REFRESH_EXPIRATION_DELTA': timedelta(days=30),
+}
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -49,6 +61,8 @@ INSTALLED_APPS = [
     "word_card",
     "dictionary",
     "storages",
+    "dialogue",
+    "alerts"
 ]
 
 MIDDLEWARE = [
@@ -92,7 +106,16 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
-
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql_psycopg2",
+#         "NAME": "pinguo",
+#         "USER": "rootuser",
+#         "PASSWORD": "rootuser9683",
+#         "HOST": "localhost",
+#         "PORT": "",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

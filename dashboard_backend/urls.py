@@ -16,4 +16,6 @@ urlpatterns = [
     path("", include("course.urls")),
     path("", include("word_card.urls")),
     path("", include("dictionary.urls")),
+    path("", include("dialogue.urls")),
+    path("", include("alerts.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

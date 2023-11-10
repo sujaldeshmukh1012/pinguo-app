@@ -13,7 +13,12 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import generics
-
+from word_card.models import WordCard
+from word_card.serializers import WordCardSerializer
+from dialogue.models import DialogueGroup
+from dialogue.serializers   import DialogueGroupSerializer
+from alerts.models import Note,Popup,Label
+from alerts.serializers import NoteSerializer,PopupSerializer,LabelSerializer
 
 class CourseList(APIView):
     permission_classes = [IsAuthenticated]
@@ -78,6 +83,49 @@ class LessonList(APIView):
         return Response(serializer.data)
 
 
+
+
+
+class LessonContent(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, id=None):
+        less = Lesson.objects.filter(id=id,author=request.user.id).first()
+        word_cards = WordCard.objects.filter(lesson=less).order_by('-last_updated')
+        dialogue_grp = DialogueGroup.objects.filter(lesson=less).order_by('-last_updated')
+        notes = Note.objects.filter(lesson=less).order_by('-created')
+        notes_serializer = NoteSerializer(notes, many=True)
+        popups = Popup.objects.filter(lesson=less).order_by('-created')
+        popups_serializer = PopupSerializer(popups, many=True)
+        
+        labels = Label.objects.filter(lesson=less).order_by('-created')
+        labels_serializer = LabelSerializer(labels, many=True)
+        
+        dia_serializer = DialogueGroupSerializer(dialogue_grp, many=True)
+        w_card__serializer = WordCardSerializer(word_cards, many=True)
+        resp = [w_card__serializer.data,dia_serializer.data,notes_serializer.data,popups_serializer.data,labels_serializer.data]
+        return Response(resp)
+
+
+class LessonAllAttachmentsList(APIView):
+        permission_classes = [IsAuthenticated]
+
+
+        def get(self, request, id=None):
+                less = Lesson.objects.filter(id=id,author=request.user.id).first()
+                notes = Note.objects.filter(lesson=less).order_by('-created')
+                notes_serializer = NoteSerializer(notes, many=True)
+                popups = Popup.objects.filter(lesson=less).order_by('-created')
+                popups_serializer = PopupSerializer(popups, many=True)
+                
+                labels = Label.objects.filter(lesson=less).order_by('-created')
+                labels_serializer = LabelSerializer(labels, many=True)
+                resp = [notes_serializer.data,popups_serializer.data,labels_serializer.data]
+                return Response(resp)
+# index 0 => notes , index 1 => popups, index 2 => labels 
+
+
+
 class LessonActions(APIView):
     def put(self, request, id=None):
         lessons = Lesson.objects.filter(id=id).first()
@@ -128,3 +176,4 @@ class UpdateLessonListIndexing(APIView):
         lessons = Lesson.objects.filter(author=request.user.id)
         serializer = LessonSerializer(lessons, many=True)
         return Response(serializer.data)
+
