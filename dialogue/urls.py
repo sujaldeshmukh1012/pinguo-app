@@ -20,7 +20,7 @@ urlpatterns = [
     path("dialogue-details/<int:id>", views.DialogueDetails.as_view(), name="dialogue list"),
     path("dialogue-actions/<int:id>/", views.DialogueActions.as_view(), name="dialogue actions"),
     path("dialogue/<int:id>", views.DialogueList.as_view()),
-
+    path("dialogue-test-balloon-select/<int:_id>/<int:id_>/",views.AddSelectedBallonToDialogue.as_view(),name="for"),
     # TestAnswer endpoints
     path("testanswer/<int:id>/", views.TestAnswerActions.as_view(), name=""),
     path("testanswer/", views.TestAnswerActions.as_view(), name=""),
@@ -32,6 +32,9 @@ urlpatterns = [
     path("testcard/<int:id>/", views.TestCardActions.as_view(), name=""),
     path("testcard-details/<int:id>", views.TestCardDetails.as_view(), name=""),
     
-    # General Paths
+    # General Path
     path("dialogue-grp/<int:id>", views.DialogueBoxContent.as_view(), name=""),
+    
+    # Change Arrangement 
+    path("change-dialogue-group-arrangement/<int:id>/",views.ChangeDialogueList.as_view(),name="")
 ]

@@ -19,6 +19,11 @@ from dictionary.models import Word
 from word_card.serializers import WordCardSerializer
 from dictionary.serializers import WordSerializer
 import string 
+from .data import *
+from operator import itemgetter
+
+
+
 
 
 # Create your views here.
@@ -63,6 +68,19 @@ class DialogueGroupDetail(APIView):
         dialoguegrp = DialogueGroup.objects.filter(user=request.user.id, id=id).first()
         serializer = DialogueGroupSerializer(dialoguegrp)
         return Response(serializer.data)
+    
+class ChangeDialogueList(APIView):
+    permission_classes = [IsAuthenticated]
+    
+    def put(self,request,id=None):
+        obj = DialogueGroup.objects.filter(id=id).first()
+        item = request.data.get("items")
+        for i in item:
+            print(str(i.get("id")) + " is for  " + i.get("info_type"))
+        obj.arragements = item
+        obj.save()
+        ser = DialogueGroupSerializer(obj,many=False)
+        return Response(ser.data)
 
 
 class DialogueList(APIView):
@@ -158,25 +176,8 @@ class BallonActions(APIView):
         ideogram = request.data.get('ideogram')
         user = request.user
         lesson = request.data.get('lesson')
-        spl = ideogram.translate(str.maketrans('', '', string.punctuation)).replace("", " ")
-        string_main = listToString(spl)
-        pinyin_str_instance = listToString(spl)
-        res = [string_main[i: j] for i in range(len(string_main))
-          for j in range(i + 1, len(string_main) + 1)]
-        ind = len(string_main)
-        while ind>=0:    # it will iterate till the index of string_main is not 0
-            for i in range(len(res)): # it iterates through the response array
-                if len(res[i]) == ind:   # this will make sure i am checking only upper bound substrings
-                    get_pin=getPinYin(res[i])# this checks the presence of the substring in the database
-                    if get_pin: # if the pinyin is existing
-
-                        if res[i] in pinyin_str_instance:
-                            pinyin_str_instance =  pinyin_str_instance.replace(res[i],get_pin+' ')
-                        resp_data = CreateLinkedWordCard(res[i],lesson,user.id) 
-                        string_main.replace(res[i],"") # this removes the recently found substring from the string_main
-            ind=ind-1
-            print(pinyin_str_instance)
-            #the while loop ends 
+        pinyin_str_instance= ReturnPunctuations(ideogram,lesson,user)
+        ideogram = ideogram.replace("。","")
 
         avatar = request.data.get('avatar')
         meaning = request.data.get('meaning')
@@ -193,7 +194,45 @@ class BallonActions(APIView):
         serializer = BallonSerializer(ballon,many=False)
         return Response(serializer.data)
 
+    def put(self, request):
+        ideogram = request.data.get('ideogram')
+        id = request.data.get('id')
+        user = request.user
+        lesson = request.data.get('lesson')
+        pinyin_str_instance= ReturnPunctuations(ideogram,lesson,user)
+        avatar = request.data.get('avatar')
+        meaning = request.data.get('meaning')
+        file = request.data.get('file')
+        ballon =  Ballon.objects.filter(id=id).first()
+        ballon.ideogram = ideogram or ballon.ideogram
+        ballon.avatar = avatar or ballon.avatar
+        ballon.pronunciation = pinyin_str_instance
+        ballon.meaning = meaning or ballon.meaning 
+        ballon.file = file or ballon.file
+        ballon.save()
+        serializer = BallonSerializer(ballon,many=False)
+        return Response(serializer.data)
 
+
+def ReturnPunctuations(ideogram,lesson,user):
+    spl = ideogram.translate(str.maketrans('', '', r"""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~""")).replace("", " ")
+    string_main = listToString(spl)
+    pinyin_str_instance = listToString(spl)
+    res = [string_main[i: j] for i in range(len(string_main))
+        for j in range(i + 1, len(string_main) + 1)]
+    ind = len(string_main)
+    while ind>=0:    # it will iterate till the index of string_main is not 0
+        for i in range(len(res)): # it iterates through the response array
+            if len(res[i]) == ind:   # this will make sure i am checking only upper bound substrings
+                get_pin=getPinYin(res[i])# this checks the presence of the substring in the database
+                if get_pin: # if the pinyin is existing
+                    if res[i] in pinyin_str_instance:
+                        pinyin_str_instance =  pinyin_str_instance.replace(res[i],get_pin+' ')
+                    resp_data = CreateLinkedWordCard(res[i],lesson,user.id) 
+                    string_main.replace(res[i],"") # this removes the recently found substring from the string_main
+                    
+        ind=ind-1
+    return pinyin_str_instance
 
 class TestAnswerActions(APIView):
     permission_classes = (IsAuthenticated,)
@@ -233,6 +272,7 @@ class TestAnswerDetails(APIView):
 
 
 
+
 class TestCardActions(APIView):
     permission_classes = (IsAuthenticated,)
     
@@ -268,6 +308,15 @@ class TestCardActions(APIView):
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
+class AddSelectedBallonToDialogue(APIView):
+    permission_classes = (IsAuthenticated,)
+    def post(self, request, _id=None,id_=None):
+        test_card = TestCard.objects.filter(id=_id).first()
+        ballon = Ballon.objects.filter(id=id_)
+        test_card.edited_ballon= ballon.first()
+        test_card.save()
+        serializer = TestCardSerializer(test_card,many=False)
+        return Response(serializer.data)
     
     
 class TestCardDetails(APIView):
@@ -286,20 +335,26 @@ class TestCardDetails(APIView):
 
 class DialogueBoxContent(APIView):
     permission_classes = [IsAuthenticated]
-    
-    def get(self, request, id):
-        grp = DialogueGroup.objects.filter(id=id,user=request.user.id).first()
-        dialogue = Dialogue.objects.filter(dialogue_group=grp).order_by('-last_updated')
-        dialogue_serializers = DialogueSerializer(dialogue,many=True)
-        
-        test = TestCard.objects.filter(dialogue_group=grp).order_by('-last_updated')
-        test_serializers = TestCardSerializer(test,many=True)
-        resp = [dialogue_serializers.data,test_serializers.data]
+    def get(self, request, id=None):
+        less = DialogueGroup.objects.filter(id=id,user=request.user.id).first()
+        try:
+            data = less.arragements.get("data",None)
+        except:
+            data = less.arragements
+        if (data == False or data == None):
+
+            # create Data and save()
+            resp = fetchDataAndSave(less)
+            
+        else:
+            # fetch data and return
+            print(data)
+            resp = GiveResponse(data,less)
         return Response(resp)
 
 
 def CreateLinkedWordCard(word,lessonId,userId):
-    print(word,lessonId,userId)
+
     arr = word.split()
     resp = []
     for i in range(len(arr)):
@@ -326,6 +381,7 @@ def CreateLinkedWordCard(word,lessonId,userId):
 
 
 
+
 def getPinYin(word):
     ideo = Word.objects.filter(ideogram=word)
     if ideo.exists():
@@ -334,19 +390,19 @@ def getPinYin(word):
         return False
     
 def detectPunctuations(array):
-    punc = [',',":","!",";","?","｡","“","”","•",".","﹑","「","」","『","』"]
-    print("entry point array:",array)
+    punc = [',',":","!",";","?","｡","“","”","•",".","﹑","「","」","『","』","。"]
+
     arr=array
     idx=0
     for i in range(len(punc)):
-        print("--------")
+
         if punc[i] in arr:
             idx = arr.index(punc[i])
             # arr.pop(idx,1)
-            print("this is the index:",idx)
+
         else:
             pass
-    print("this is the array:",arr)
+
     return arr
 
 
@@ -364,3 +420,82 @@ def listToString(s):
     # return string
     return str1.replace(" ","")
 # Driver code
+
+
+
+
+def getObjectsFromUrl(url):
+    # sample = "/dialogue-group/23"
+    data = url.lstrip("/").rstrip("/").split("/")
+    #sample = ["dialogue-group","23"]
+    st = ""
+    inti = ""
+    for item in data:
+        if (item.isdigit()):
+            inti = int(item)
+        else:
+            st = item
+    if st== "dialogue-group":
+        data = getDialogue_group(inti)
+
+    elif st == "dialogue":
+        data = getDialogue_list(inti)
+        # data = DialogueGroup.objects.filter(id=inti).first()
+    return data
+
+def getAllData(grp):
+        test = TestCard.objects.filter(dialogue_group=grp).order_by('-last_updated')
+        dialogue = Dialogue.objects.filter(dialogue_group=grp).order_by('-last_updated')
+        main_data = [test,dialogue]
+        items=[]
+        for item in main_data:
+            for data in item:
+                d={}
+                d['id'] = data.id
+                d['info_type'] = data.info_type
+                d["created"] = data.created.timestamp()
+                items.append(d)
+        newlist = sorted(items, key=itemgetter('created'), reverse=True)
+        return newlist
+
+def fetchDataAndSave(grp):
+        newlist = getAllData(grp)
+        grp.arragements = newlist
+        grp.save()
+        res = GiveResponse(newlist,grp)
+        return res
+def GiveResponse(NewList,grp):
+    all_data = getAllData(grp)
+    data_to_add = []
+    data_to_remove=[]
+    for i in all_data:
+        if (i not in NewList):
+            data_to_add.append(i)
+
+    for k in NewList:
+        if (k not in all_data):
+            data_to_remove.append(k)
+    # remove first
+    for rem_data in NewList:
+        if (rem_data in data_to_remove):
+            ind = NewList.index(rem_data)
+            NewList.pop(ind)
+
+    # add later
+    for adddata in data_to_add:
+        NewList.insert(0,adddata)
+
+    grp.arragements = NewList
+    grp.save()
+    
+    main_data =[]
+    for data in NewList:
+        if data["info_type"] == "dialogue":
+            d= Dialogue.objects.filter(id=data['id']).first()
+            d_s = DialogueSerializer(d,many=False)
+            main_data.append(d_s.data)
+        if data["info_type"] == "test_card":
+            p= TestCard.objects.filter(id=data['id']).first()
+            p_s = TestCardSerializer(p,many=False)
+            main_data.append(p_s.data)
+    return main_data

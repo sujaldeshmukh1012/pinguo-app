@@ -27,7 +27,6 @@ VOICE_CHOICES = (
     ("male_voice", "Male Voice"),
     ("female_voice", "Female Voice"),
 )
-  
 class Ballon(models.Model):
     avatar = models.CharField(
             max_length = 20,
@@ -87,6 +86,8 @@ class DialogueGroup(models.Model):
         blank=True, editable=False, default=timezone.now
     )
     info_type = models.CharField(max_length=100,default="dialogue_group",editable=False)
+    arragements = models.JSONField(default=dict({"data":False}))
+    
     def __str__(self):
         return self.title
 
@@ -147,7 +148,7 @@ class TestCard(models.Model):
     hide =  models.TextField(blank=True, null=True,default='')
     arrangement_number = models.IntegerField(null=True, default=0)
     created = models.DateTimeField(auto_now_add=True,editable=False)
-    # edite_ballon = models.IntegerField(default=None,blank=True,null=True)
+    edited_ballon = models.ForeignKey(Ballon,on_delete=models.SET_NULL,null=True)
     last_updated = models.DateTimeField(
         blank=True, editable=False, default=timezone.now
     )
@@ -160,5 +161,3 @@ class TestCard(models.Model):
     def save(self, *args, **kwargs):
         self.last_updated = timezone.now()
         super(TestCard, self).save(*args, **kwargs)
-        
-  

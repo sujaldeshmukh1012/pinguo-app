@@ -53,3 +53,5 @@ class TestCardAdmin(admin.ModelAdmin):
 
 
 admin.site.register(TestCard, TestCardAdmin)
+
+

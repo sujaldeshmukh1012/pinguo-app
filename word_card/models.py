@@ -18,20 +18,17 @@ class WordCard(models.Model):
     dictionary = models.ForeignKey(
         Word, on_delete=models.CASCADE, null=True, blank=True
     )
-    lesson = models.ForeignKey(Lesson, on_delete=models.PROTECT, default=None)
+    lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE, default=None,)
     linked  = models.BooleanField(default=False)
     popup_linked = models.ManyToManyField(Popup,blank=True)
     note_linked = models.ManyToManyField(Note,blank=True)
     label_linked = models.ManyToManyField(Label,blank=True)
     info_type = models.CharField(max_length=100,default="word_card",editable=False)
-    # popups = models.ManyToManyField(Popup)
-    
     
     
     def __str__(self):
         return self.word
 
-    def save(self, *args, **kwargs):
-        self.last_updated = timezone.now()
-        super(WordCard, self).save(*args, **kwargs)
- 
+    def save(self,*args, **kwargs):
+        # self.last_updated = timezone.now()
+        super(WordCard, self).save(*args, **kwargs) 

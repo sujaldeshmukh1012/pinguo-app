@@ -16,6 +16,11 @@ class BallonSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+
+
+
+
+
 class DialogueGroupSerializer(serializers.ModelSerializer):
 
     class Meta:

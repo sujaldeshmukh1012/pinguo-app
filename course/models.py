@@ -17,6 +17,7 @@ class Lesson(models.Model):
     last_updated = models.DateTimeField(blank=True, editable=False)
     arrangement_number = models.IntegerField(null=True, default=0)
     info_type = models.CharField(max_length=100,default="lesson",editable=False)
+    # arragements = models.JSONField(default=dict([]))
     def __str__(self):
         return self.title
 
@@ -32,6 +33,8 @@ class Course(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
     arrangement_number = models.IntegerField(null=True, default=0)
     info_type = models.CharField(max_length=100,default="course",editable=False)
+    arragements = models.JSONField(null=True,blank=True,default=dict({"data":False}))
+
     def __str__(self):
         return self.title
 

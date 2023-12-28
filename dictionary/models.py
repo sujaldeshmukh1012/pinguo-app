@@ -75,5 +75,5 @@ class Pinyin(models.Model):
     tone = models.ForeignKey(PinyinTone,on_delete=models.CASCADE)
     initial_and_final = models.ForeignKey(PinyinInitialAndFinal,on_delete=models.CASCADE)
     
-    # def __str__(self):
-    #     return self.
+    def __str__(self):
+        return self.tone

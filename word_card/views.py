@@ -28,19 +28,22 @@ class WordCardOptins(APIView):
         # here we have an array of seprate operatable words.
         resp = []
         for i in range(len(arr)):
-            type(arr[i])
             lesson = Lesson.objects.filter(id=id)
             word = Word.objects.filter(ideogram=arr[i])
             lesson = Lesson.objects.filter(id=id)
+            word_exists_in_lesson  = WordCard.objects.filter(dictionary=word.first(),lesson=lesson.first())
             if word.exists() and lesson.exists():
-                w=WordCard.objects.create(
-                    dictionary=word.first(),
-                    word=arr[i],
-                    author=request.user,
-                    lesson=lesson.first(),
-                    
-                )
-                w.save()
+                if word_exists_in_lesson.exists() == False:
+                    w=WordCard.objects.create(
+                        dictionary=word.first(),
+                        word=arr[i],
+                        author=request.user,
+                        lesson=lesson.first(),
+                        
+                    )
+                    w.save()
+                else:
+                    data = {"status": "error", "error": "Word Card already exists in the lesson"}
             else:
                 data = {"status": "error", "error": "Word Does Not Exist"}
             resp.append(data)

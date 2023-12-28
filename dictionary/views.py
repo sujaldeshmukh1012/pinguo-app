@@ -50,21 +50,27 @@ class WordDataUploader(APIView):
 class HanziActions(APIView):
     permission_classes = [IsAuthenticated]
     parser_classes = (MultiPartParser, FormParser)
-    
     def get(self, request, word=None):
         decoded = unquote(word)
+        print(str(decoded))
         h_card = Hanzi.objects.filter(word=str(decoded)).first()
-        serializer = HanziSerializer(h_card)
-        print(serializer.data)
-        return Response([serializer.data])        
+        if h_card:
+            serializer = HanziSerializer(h_card)
+            print(serializer.data)
+            return Response([serializer.data])        
+        else:
+            n_h = Hanzi.objects.create(word=str(decoded))
+            serializer = HanziSerializer(n_h)
+            print(serializer.data)
+            return Response([serializer.data])
 
     def put(self, request, word=None):
         decoded = unquote(word)
-        print(decoded)
         hanzi = Hanzi.objects.filter(word=str(decoded)).first()
         if hanzi:
             hanzi.meaning = request.data.get("meaning",hanzi.meaning)
             hanzi.word = request.data.get("word",hanzi.word)
+            hanzi.pinyin = request.data.get("pinyin",hanzi.pinyin)
             hanzi.sub_description = request.data.get("sub_description" ,hanzi.sub_description)
             hanzi.description = request.data.get("description",hanzi.description)
             hanzi.subtitle = request.data.get("subtitle",hanzi.subtitle)
