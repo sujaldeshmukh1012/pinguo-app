@@ -4,6 +4,25 @@ from django.contrib.auth.models import User
 from course.models import Lesson
 # Create your models here.
 from multiselectfield import MultiSelectField
+from word_card.items import itemAddition,itemRomoval
+
+
+
+
+
+def DGItemAddition(type,lesson,id):
+    l = DialogueGroup.objects.filter(id=lesson).first()
+    item,created = DGItemListMain.objects.get_or_create(type=type,dialogue_group=l,item_id=id)
+    print("Item Addition called===========>")
+    item.save()
+    return True
+
+def DGItemRomoval(type,lesson,id):
+    print("Item Deletion called===========> for",type," of type and id ",id)
+    l = DialogueGroup.objects.filter(id=lesson).first()
+    item = DGItemListMain.objects.get(type=type,dialogue_group=l,item_id=id)
+    item.delete()
+    return True     
 
 
 class ImageModal(models.Model):
@@ -73,6 +92,12 @@ class Dialogue(models.Model):
     def save(self, *args, **kwargs):
         self.last_updated = timezone.now()
         super(Dialogue, self).save(*args, **kwargs)
+        DGItemAddition("dialogue",self.dialogue_group.id,self.id)
+
+    def delete(self,*args, **kwargs):
+        DGItemRomoval("dialogue",self.dialogue_group.id,self.id)
+        super(Dialogue, self).delete(*args, **kwargs)
+                
 
 
 
@@ -86,16 +111,26 @@ class DialogueGroup(models.Model):
         blank=True, editable=False, default=timezone.now
     )
     info_type = models.CharField(max_length=100,default="dialogue_group",editable=False)
-    arragements = models.JSONField(default=dict({"data":False}))
+    arrangement = models.JSONField(default=list,null=True,blank=True,)
     
     def __str__(self):
         return self.title
+    
+    def set_arrangement(self, list_of_ids):
+        self.arrangement = list_of_ids
 
-    def save(self, *args, **kwargs):
-        self.last_updated = timezone.now()
+    def get_arrangement(self):
+        return self.arrangement
+    
+    def save(self,*args, **kwargs):
         super(DialogueGroup, self).save(*args, **kwargs)
-        
+        itemAddition("dialogue_group",self.lesson.id,self.id)
 
+    def delete(self,*args, **kwargs):
+        itemRomoval("dialogue_group",self.lesson.id,self.id)
+        super(DialogueGroup, self).delete(*args, **kwargs)
+        
+    
 TEST_ANSWER_CHOICES = (
     ("i", "ideogram type"),
     ("p", "Pinyin Type"),
@@ -126,6 +161,8 @@ class TestAnswer(models.Model):
     def save(self, *args, **kwargs):
         self.last_updated = timezone.now()
         super(TestAnswer, self).save(*args, **kwargs)
+        
+
         
 
 
@@ -161,3 +198,71 @@ class TestCard(models.Model):
     def save(self, *args, **kwargs):
         self.last_updated = timezone.now()
         super(TestCard, self).save(*args, **kwargs)
+        DGItemAddition("test_card",self.dialogue_group.id,self.id)
+        
+    def delete(self,*args, **kwargs):
+        print("Inside the class function calledkjdghfidsu gfudsgufdgsgg")
+        DGItemRomoval("test_card",self.dialogue_group.id,self.id)
+        print("Inside the class function called")
+        super(TestCard, self).delete(*args, **kwargs)
+
+
+
+TYPE_CHOICES=[
+    ('dialogue','dialogue'),
+    ('test_card','test_card'),
+    ]
+class DGItemListMain(models.Model):
+    dialogue_group = models.ForeignKey(DialogueGroup, on_delete=models.CASCADE)
+    type = models.CharField(max_length=20, choices=TYPE_CHOICES)
+    item_id = models.PositiveIntegerField(unique=False)
+    d_object = models.ForeignKey(Dialogue,on_delete=models.CASCADE,null=True,blank=True)
+    tc_object = models.ForeignKey(TestCard,on_delete=models.CASCADE,null=True,blank=True)
+
+    # last_updated = models.DateTimeField(blank=True, editable=False)
+
+    def __str__(self):
+        return self.type + ' of id ' + str(self.item_id) + ' in lesson ' + self.dialogue_group.title
+    
+    
+    
+    def save(self, *args, **kwargs):
+        if(self.type == "dialogue"):
+            w = Dialogue.objects.get(id=self.item_id)
+            self.d_object = w
+        elif(self.type == "test_card"):
+            d = TestCard.objects.get(id=self.item_id)
+            self.tc_object = d
+        super(DGItemListMain,self).save(*args, **kwargs)
+        # self.last_updated = timezone.now()
+        AddorKeepItem(self.id,self.dialogue_group.id)
+        return self.id
+    def delete(self, *args, **kwargs):
+        RemoveItem(self.id,self.dialogue_group.id)
+        super(DGItemListMain,self).delete(*args, **kwargs)
+    
+def AddorKeepItem(item_id,obj):
+    object_ = DialogueGroup.objects.filter(id=obj).first()
+    int_array= object_.get_arrangement()
+    for id in int_array:
+        if item_id == id:
+            return
+    int_array.append(item_id)
+    object_.arrangements = int_array
+    object_.save()
+    return
+
+def RemoveItem(item_id,obj):
+    object_ = DialogueGroup.objects.filter(id=obj).first()
+    int_array= object_.get_arrangement()
+    index = int_array.index(item_id)
+    if index == -1:
+        return
+    int_array.pop(index)
+    object_.arrangements = ",".join(int_array)
+    object_.save()  
+    return
+
+
+
+

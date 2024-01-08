@@ -18,9 +18,9 @@ from course.models import Lesson
 # Create your views here.
 class NotesActions(APIView):
     permission_classes = [IsAuthenticated]
-    parser_classes = (MultiPartParser, FormParser)
+    parser_classes = (MultiPartParser, FormParser) 
     
-    def post(self,request):
+    def post(self,request,id=None):
         
         title = request.data.get('title')
         subtitle = request.data.get('subtitle')
@@ -39,8 +39,18 @@ class NotesActions(APIView):
         serializers = NoteSerializer(notes,many=False)
         return Response(serializers.data)
     
+    def put(self, request, id=None):
+        instance = Note.objects.filter(id=id).first()
+        serializer = NoteSerializer(instance, data=request.data)
+
+        if serializer.is_valid():
+            serializer.save()
+            print(serializer.data)
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
     def delete(self, request, id=None):
-        notes = Note.objects.filter(id=id, author=request.user.id)
+        notes = Note.objects.filter(id=id)
         notes.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
      
@@ -48,7 +58,7 @@ class PopupActions(APIView):
     permission_classes = [IsAuthenticated]
     parser_classes = (MultiPartParser, FormParser)
     
-    def post(self,request):
+    def post(self,request,id=None):
         
         title = request.data.get('title')
         file = request.data.get('file')
@@ -65,8 +75,17 @@ class PopupActions(APIView):
         serializers = PopupSerializer(popups,many=False)
         return Response(serializers.data)
     
+    def put(self, request, id=None):
+        instance = Popup.objects.filter(id=id).first()
+        serializer = PopupSerializer(instance, data=request.data)
+
+        if serializer.is_valid():
+            serializer.save()
+            print(serializer.data)
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     def delete(self, request, id=None):
-        popups = Popup.objects.filter(id=id, author=request.user.id)
+        popups = Popup.objects.filter(id=id)
         popups.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
      
@@ -74,7 +93,7 @@ class LabelActions(APIView):
     permission_classes = [IsAuthenticated]
     parser_classes = (MultiPartParser, FormParser)
     
-    def post(self,request):
+    def post(self,request,id=None):
         title = request.data.get('title')
         lesson = request.data.get('lesson')
         find_lesson = Lesson.objects.filter(id=lesson).first()
@@ -85,7 +104,16 @@ class LabelActions(APIView):
         labels.save()
         serializers = LabelSerializer(labels,many=False)
         return Response(serializers.data)
+    def put(self, request, id=None):
+        instance = Label.objects.filter(id=id).first()
+        serializer = LabelSerializer(instance, data=request.data)
+
+        if serializer.is_valid():
+            serializer.save()
+            print(serializer.data)
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     def delete(self, request, id=None):
-        labels = Label.objects.filter(id=id, author=request.user.id)
+        labels = Label.objects.filter(id=id)
         labels.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)

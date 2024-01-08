@@ -4,7 +4,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.parsers import JSONParser
-from .models import ImageModal,Ballon, Dialogue, DialogueGroup,TestAnswer,TestCard
+from .models import ImageModal,Ballon, Dialogue, DialogueGroup,TestAnswer,TestCard,DGItemListMain
 from .serializers import ImageModalSerializer,BallonSerializer,DialogueGroupSerializer,DialogueSerializer,TestAnswerSerializer,TestCardSerializer
 from rest_framework import serializers
 from rest_framework import status
@@ -21,7 +21,8 @@ from dictionary.serializers import WordSerializer
 import string 
 from .data import *
 from operator import itemgetter
-
+import operator
+from course.duplicateContent import duplicateBallon,duplicateImage,duplicateTestAnswers
 
 
 
@@ -75,13 +76,13 @@ class ChangeDialogueList(APIView):
     def put(self,request,id=None):
         obj = DialogueGroup.objects.filter(id=id).first()
         item = request.data.get("items")
-        for i in item:
-            print(str(i.get("id")) + " is for  " + i.get("info_type"))
-        obj.arragements = item
+        l = []
+        for data in item:
+            l.append(data.get("item_id",0))
+        obj.arrangement = l
         obj.save()
         ser = DialogueGroupSerializer(obj,many=False)
         return Response(ser.data)
-
 
 class DialogueList(APIView):
     permission_classes = [IsAuthenticated]
@@ -269,9 +270,49 @@ class TestAnswerDetails(APIView):
         serializer = TestAnswerSerializer(test_answer,many=True)
         return Response(serializer.data)
  
+class DialogueDuplication(APIView):
+    permission_classes = [IsAuthenticated]
 
 
+    def post(self,request,id=None):
+        old_d = Dialogue.objects.filter(id=id).first()
+        new_d = Dialogue.objects.create(
+        user=old_d.user,
+        lesson=old_d.lesson,
+        dialogue_group=old_d.dialogue_group,
+        title=old_d.title,
+        )
+        all_ballons= old_d.ballon.all()
+        all_image = old_d.image.all()
+        for i in all_ballons:
+            new_id = duplicateBallon(i.id)
+            new_d.ballon.add(new_id)
+        for j in all_image:
+            new_i_id = duplicateImage(j.id)
+            new_d.image.add(new_i_id)
+        new_d.save()
+        ser = DialogueSerializer(new_d,many=False)
+        return Response(ser.data) 
+class DuplicateTestCard(APIView):
+    permission_classes = (IsAuthenticated,)
 
+    def post(self,request,id=None):
+        old_test = TestCard.objects.filter(id=id).first()
+        new_test = TestCard.objects.create(
+            dialogue_group=old_test.dialogue_group,
+            dialogue=old_test.dialogue,
+            card_type=old_test.card_type,
+            user=old_test.user,
+            test_text=old_test.test_text,
+            hide=old_test.hide
+        )
+        new_test.save()
+        new_answers = duplicateTestAnswers(old_test,new_test)
+        for answer in new_answers:
+            new_test.answers.add(answer)
+        new_test.save()
+        ser = TestCardSerializer(new_test,many=False)
+        return Response(ser.data)
 
 class TestCardActions(APIView):
     permission_classes = (IsAuthenticated,)
@@ -296,6 +337,7 @@ class TestCardActions(APIView):
     
     def delete(self, request, id=None):
         test_card = TestCard.objects.filter(id=id, user=request.user.id)
+        print(id,"Its getting deleted")
         test_card.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
     
@@ -335,24 +377,26 @@ class TestCardDetails(APIView):
 
 class DialogueBoxContent(APIView):
     permission_classes = [IsAuthenticated]
+ 
+ 
     def get(self, request, id=None):
-        less = DialogueGroup.objects.filter(id=id,user=request.user.id).first()
-        try:
-            data = less.arragements.get("data",None)
-        except:
-            data = less.arragements
-        if (data == False or data == None):
-
-            # create Data and save()
-            resp = fetchDataAndSave(less)
-            
-        else:
-            # fetch data and return
-            print(data)
-            resp = GiveResponse(data,less)
-        return Response(resp)
-
-
+        dg = DialogueGroup.objects.filter(id=id).first()
+        lists_of_items = DGItemListMain.objects.filter(dialogue_group=dg)
+        data = get_all_data(lists_of_items,dg.arrangement)
+        return data
+    # def get(self, request, id=None):
+    #     al_d = Dialogue.objects.all()
+    #     for d in al_d:
+    #         d.save()
+    #     al_test = TestCard.objects.all()
+    #     for t in al_test:
+    #         t.save()
+    #     return Response({"message":"true"})
+    
+    
+    
+    
+    
 def CreateLinkedWordCard(word,lessonId,userId):
 
     arr = word.split()
@@ -499,3 +543,34 @@ def GiveResponse(NewList,grp):
             p_s = TestCardSerializer(p,many=False)
             main_data.append(p_s.data)
     return main_data
+
+
+
+
+
+def get_all_data(list_of_items,arrangement):
+    data = []    
+    # Create a mapping of IDs to their desired positions
+    id_to_position = {id: index for index, id in enumerate(arrangement)}
+    # Sort list_of_items based on the object.id's position in the id_to_position mapping
+    sorted_items = sorted(list_of_items, key=operator.attrgetter("id"), reverse=True)  # Reverse for descending order
+    sorted_items.sort(key=lambda item: id_to_position[item.id])
+    for obj in sorted_items:
+        ret = serialize_this_item(obj)
+        ret['item_id'] = obj.id
+        data.append(ret)
+    # Now sorted_items will be in the same order as the arrangement list
+    return Response(data)
+
+
+
+def serialize_this_item(data):
+    type = data.type
+    if (type == "dialogue"):
+        w = Dialogue.objects.filter(id=data.item_id).first()
+        ser = DialogueSerializer(w,many=False)
+        return ser.data
+    elif(type=="test_card"):
+        w = TestCard.objects.filter(id=data.item_id).first()
+        ser = TestCardSerializer(w,many=False)
+        return ser.data

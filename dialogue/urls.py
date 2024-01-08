@@ -19,6 +19,7 @@ urlpatterns = [
     # dialogue endpoints
     path("dialogue-details/<int:id>", views.DialogueDetails.as_view(), name="dialogue list"),
     path("dialogue-actions/<int:id>/", views.DialogueActions.as_view(), name="dialogue actions"),
+    path("dialogue-duplication/<int:id>/", views.DialogueDuplication.as_view(), name="dialogue duplication"),
     path("dialogue/<int:id>", views.DialogueList.as_view()),
     path("dialogue-test-balloon-select/<int:_id>/<int:id_>/",views.AddSelectedBallonToDialogue.as_view(),name="for"),
     # TestAnswer endpoints
@@ -31,6 +32,7 @@ urlpatterns = [
     path("testcard/", views.TestCardActions.as_view(), name=""),
     path("testcard/<int:id>/", views.TestCardActions.as_view(), name=""),
     path("testcard-details/<int:id>", views.TestCardDetails.as_view(), name=""),
+    path("testcard-duplication/<int:id>/", views.DuplicateTestCard.as_view(), name=""),
     
     # General Path
     path("dialogue-grp/<int:id>", views.DialogueBoxContent.as_view(), name=""),

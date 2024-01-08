@@ -1,7 +1,7 @@
 from django.db import models
 from course.models import Lesson
 # Create your models here.
-
+from word_card.items import itemAddition,itemRomoval
 
 
 class Note(models.Model):
@@ -16,7 +16,14 @@ class Note(models.Model):
         return self.title
 
 
+    def save(self,*args, **kwargs):
+        super(Note, self).save(*args, **kwargs) 
+        itemAddition("note",self.lesson.id,self.id)
 
+    def delete(self,*args, **kwargs):
+        itemRomoval("note",self.lesson.id,self.id)
+        super(Note, self).delete(*args, **kwargs)
+        
 
 class Popup(models.Model):
     title = models.CharField(max_length=200,blank=False)
@@ -28,6 +35,16 @@ class Popup(models.Model):
     
     def __str__(self):
         return self.title
+    
+    
+    def save(self,*args, **kwargs):
+        super(Popup, self).save(*args, **kwargs) 
+        itemAddition("popup",self.lesson.id,self.id)
+
+    def delete(self,*args, **kwargs):
+        itemRomoval("popup",self.lesson.id,self.id)
+        super(Popup, self).delete(*args, **kwargs)
+        
 
 
 class Label(models.Model):
@@ -37,4 +54,12 @@ class Label(models.Model):
     info_type = models.CharField(max_length=100,default="label",editable=False)
     def __str__(self):
         return self.title
- 
+   
+    def save(self,*args, **kwargs):
+        super(Label, self).save(*args, **kwargs) 
+        itemAddition("label",self.lesson.id,self.id)
+
+    def delete(self,*args, **kwargs):
+        itemRomoval("label",self.lesson.id,self.id)
+        super(Label, self).delete(*args, **kwargs)
+        

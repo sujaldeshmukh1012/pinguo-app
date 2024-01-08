@@ -9,3 +9,4 @@ class WordCardAdmin(admin.ModelAdmin):
 
 
 admin.site.register(WordCard, WordCardAdmin)
+

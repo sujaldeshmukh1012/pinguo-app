@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ImageModal, Ballon , Dialogue , DialogueGroup,TestAnswer,TestCard
+from .models import ImageModal, Ballon , Dialogue , DialogueGroup,TestAnswer,TestCard,DGItemListMain
 # Register your models here.
 
 
@@ -53,5 +53,6 @@ class TestCardAdmin(admin.ModelAdmin):
 
 
 admin.site.register(TestCard, TestCardAdmin)
+admin.site.register(DGItemListMain)
 
 

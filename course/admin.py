@@ -17,3 +17,11 @@ class LessonAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Lesson, LessonAdmin)
+
+
+class ItemListAdmin(admin.ModelAdmin):
+    list_display = ("id","type","item_id","lesson")
+    # ordering = ["-last_updated"]
+    
+    
+admin.site.register(ItemList, ItemListAdmin)

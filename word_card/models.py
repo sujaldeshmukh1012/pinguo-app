@@ -4,6 +4,8 @@ from django.utils import timezone
 from dictionary.models import Word
 from course.models import Lesson
 from alerts.models import Popup,Note,Label
+from course.models import ItemList
+from .items import itemAddition,itemRomoval
 # Create your models here.
 
 
@@ -30,5 +32,10 @@ class WordCard(models.Model):
         return self.word
 
     def save(self,*args, **kwargs):
-        # self.last_updated = timezone.now()
-        super(WordCard, self).save(*args, **kwargs) 
+        super(WordCard, self).save(*args, **kwargs)
+        print("saving new item",self.id)
+        itemAddition("word_card",self.lesson.id,self.id)
+
+    def delete(self,*args, **kwargs):
+        itemRomoval("word_card",self.lesson.id,self.id)
+        super(WordCard, self).delete(*args, **kwargs)
