@@ -25,7 +25,6 @@ def giveMeObject(type,object_id):
         
 def syncdata():
     try:
-            
         w =WordCard.objects.all()
         d =Dialogue.objects.all()
         dg =DialogueGroup.objects.all()

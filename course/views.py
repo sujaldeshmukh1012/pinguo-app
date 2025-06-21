@@ -29,8 +29,8 @@ from .objects import syncdata
 class CourseList(APIView):
     permission_classes = [IsAuthenticated]
     def get(self, request):
-        status = syncdata()
-        print(status)
+        # status = syncdata()
+        # print(status)
         courses = Course.objects.filter(author=request.user.id).order_by(
             "-last_updated"
         )
@@ -81,8 +81,10 @@ class CourseActions(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 class CourseDuplication(APIView):
+    # this function is not running and needs to be fixed
     permission_classes = [IsAuthenticated]
     def post(self, request, id=None):
+        print("COurse duplication triggered")
         courses = Course.objects.filter(id=id).first()
         old_id = id
         if courses:
