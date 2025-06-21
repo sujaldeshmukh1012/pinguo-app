@@ -1,9 +1,4 @@
-Here's a **comprehensive `README.md`** for the **backend Django repository** of the Pinguo Dashboard app.
-
----
-
-
-# 🐧 Pinguo Dashboard Backend
+# Pinguo Dashboard Backend
 
 The **Pinguo Dashboard Backend** powers the core functionality of the teacher-side admin interface in the Pinguo language learning platform. Built using **Django** and **Django REST Framework**, this backend handles content creation, test management, media storage, JWT authentication, and integration with a React frontend dashboard.
 
